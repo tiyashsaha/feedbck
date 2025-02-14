@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .btn {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Feedback Form</h1>
+<marquee><p>Please provide your feedback in the form below any type of<b> blockchain</b> advice:</p></marquee>
+
+<form name="feedback_form" id="feedback_form" method="post" action="mailto:your-email@example.com" enctype="text/plain">
+    <label>How do you rate your overall experience?</label><br>
+    <input type="radio" name="rating" id="rating_bad" value="bad">
+    <label for="rating_bad">Bad</label><br>
+    
+    <input type="radio" name="rating" id="rating_good" value="good">
+    <label for="rating_good">Good</label><br>
+    
+    <input type="radio" name="rating" id="rating_excellent" value="excellent">
+    <label for="rating_excellent">Excellent!</label><br>
+
+    <label for="feedback_comments">Comments:</label><br>
+    <textarea class="form-control" required rows="6" name="comments" id="feedback_comments"></textarea><br>
+
+    <label for="feedback_name">Your Name:</label><br>
+    <input type="text" required name="name" class="form-control" id="feedback_name"/><br>
+
+    <label for="feedback_email">Email:</label><br>
+    <input type="email" required name="email" class="form-control" id="feedback_email"/><br>
+
+    <button type="submit" class="btn">Submit Feedback</button>
+</form>
+
+</body>
+</html>
